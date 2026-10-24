@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Oye, una cosita...</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="background-image" id="bgImage"></div>
+
+  <!-- Pantalla 1: La disculpa inicial -->
+  <main class="card" id="card">
+    <h1 id="title"></h1>
+    <div class="buttons" id="buttons">
+      <button id="yes">Sí</button>
+    </div>
+    <button id="no">No D:</button>
+  </main>
+
+  <!-- Pantalla 2: El tablero de stickers -->
+  <main class="board-card" id="menuCard">
+    <div class="tape"></div>
+    
+    <h1 class="board-title">
+      cosas tontas que me hacen pensar en ti<br> 
+      <span class="board-sub">más de lo que quiero...</span>
+    </h1>
+
+    <div class="stickers-board">
+      
+      <!-- Sticker 1: El libro -->
+      <button class="sticker sticker-1" data-target="modal-long-letter">
+        <div class="polaroid">
+          <img src="imagengali1.png" alt="Tu libro favorito">
+          <div class="polaroid-caption">su libro favorito</div>
+        </div>
+      </button>
+
+      <!-- Sticker 2: La enfermera -->
+      <button class="sticker sticker-2" data-target="modal-long-letter">
+        <div class="polaroid">
+          <img src="imagengali2.png" alt="Su trabajo">
+          <div class="polaroid-caption">su trabajo</div>
+        </div>
+      </button>
+
+      <!-- Sticker 3: El ship -->
+      <button class="sticker sticker-3" data-target="modal-long-letter">
+        <div class="polaroid">
+          <img src="imagengali3.png" alt="Us!">
+          <div class="polaroid-caption">us!</div>
+        </div>
+      </button>
+
+    </div>
+  </main>
+
+  <!-- MODAL ÚNICO: La Carta Final (Foto + Texto + Canción) -->
+  <div class="modal" id="modal-long-letter">
+    <div class="modal-content long-letter-content">
+      <button class="close-btn">&times;</button>
+      
+      <!-- La cuarta imagen (dentro de la carta) -->
+      <div class="final-photo">
+        <img src="imagenfinal.png" alt="Una última cosa que decir">
+        <div class="final-photo-caption">una última cosa que decir</div>
+      </div>
+
+      <div class="long-letter-text">
+        <p>Ejem… oa, galli. Sé que llevo mucho tiempo sin hablarte, que quizás esto te tome por sorpresa, pero aquí estoy. Vengo a pedir perdón. Perdón por ser un chismoso con mi padre, se me salió lo que se me salió…</p>
+        <p>Lo sé, no soy tu amistad más cercana, no soy la persona perfecta. No soy la persona que quieres, pero para ser sincero… aunque no haga un escándalo, aunque no le haga saber al mundo que te extraño, <strong>te extraño</strong>. Te extraño porque no puedo ver libros raros sin pensar en ti, porque no puedo ver un hospital sin pensar qué será de ti, porque día tras día me pregunto si tu salud mejoró, porque día tras día me pregunto si al menos un poco me extrañas, a pesar de que me empieces a tratar indiferente, a pesar de que hagas lo que hagas.</p>
+        <p>Lo admito: te extraño. Soy un idiota, pero… ¿no me dijiste un día que era tu idiota? Tal vez soy muy inmaduro a tu comparación. Quizás no soy… ¿perfecto? Quizás simplemente no veas este mensaje al no perdonarme. Pero si lo viste y lo hiciste, quiero que sepas que yo… <strong>te amo</strong>. Tal vez no de manera romántica o sana, pero lo hago, galli. Porque en algún momento fuiste mi daily chat, porque en algún momento fuiste esa única notificación no silenciada…</p>
+        <p>Capaz solo te rías de mí, pero te extraño. ¿Me das el derecho de volver a tu vida? ¿O me vas a asesinar con el filo de tu indiferencia?</p>
+      </div>
+
+      <!-- Reproductor de música -->
+      <div class="final-audio">
+        <p class="audio-label">dale play mientras lees...</p>
+        <audio id="songAudio" src="ytmp3free.cc_ricky-montgomery-mr-loverman-official-lyric-video-youtubemp3free.org (1).mp3" controls></audio>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
